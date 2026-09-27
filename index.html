@@ -6,7 +6,7 @@
     <title>トーク & お買い物アプリ</title>
     
     <!-- PWA対応メタタグ -->
-    <meta name="theme-color" content="#06C755">
+    <meta name="theme-color" content="#000000">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="トークアプリ">
@@ -19,10 +19,10 @@
             "start_url": "./",
             "display": "standalone",
             "background_color": "#ffffff",
-            "theme_color": "#06C755",
+            "theme_color": "#000000",
             "icons": [
                 {
-                    "src": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/svgs/brands/line.svg",
+                    "src": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/svgs/solid/circle.svg",
                     "sizes": "192x192 512x512",
                     "type": "image/svg+xml"
                 }
@@ -132,12 +132,12 @@
             width: 48px;
             height: 48px;
             border-radius: 50%;
-            background-color: #06C755;
+            background-color: #000000;
             color: white;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 20px;
+            font-size: 18px;
         }
 
         .my-name {
@@ -250,7 +250,7 @@
         }
 
         .tab.active {
-            background-color: #06C755;
+            background-color: #000000;
             color: #ffffff;
         }
 
@@ -323,14 +323,14 @@
             align-items: center;
             justify-content: center;
             color: #555;
-            font-size: 20px;
+            font-size: 18px;
         }
 
         .pin-badge {
             position: absolute;
             bottom: 0;
             right: 0;
-            background-color: #06C755;
+            background-color: #000000;
             color: white;
             width: 16px;
             height: 16px;
@@ -424,71 +424,6 @@
             padding-bottom: 70px;
         }
 
-        .message-group {
-            display: flex;
-            align-items: flex-start;
-            gap: 8px;
-        }
-
-        .message-group.mine {
-            flex-direction: row-reverse;
-        }
-
-        .msg-avatar {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background-color: #9ca3af;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 14px;
-            flex-shrink: 0;
-        }
-
-        .msg-body {
-            display: flex;
-            flex-direction: column;
-            max-width: 70%;
-        }
-
-        .message-group.mine .msg-body {
-            align-items: flex-end;
-        }
-
-        .bubble {
-            background-color: white;
-            padding: 10px 14px;
-            border-radius: 16px;
-            font-size: 14px;
-            color: #111;
-            line-height: 1.4;
-            word-break: break-all;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-        }
-
-        .message-group.mine .bubble {
-            background-color: #8aec85;
-        }
-
-        .msg-meta {
-            display: flex;
-            align-items: flex-end;
-            gap: 4px;
-            margin-top: 2px;
-        }
-
-        .read-status {
-            font-size: 10px;
-            color: #4b5563;
-        }
-
-        .msg-time {
-            font-size: 10px;
-            color: #4b5563;
-        }
-
         .chatroom-footer {
             position: absolute;
             bottom: 0;
@@ -566,12 +501,12 @@
         .module-price {
             font-size: 15px;
             font-weight: bold;
-            color: #06C755;
+            color: #000;
             margin-bottom: 12px;
         }
 
         .module-btn {
-            background-color: #06C755;
+            background-color: #000;
             color: white;
             border: none;
             padding: 8px 0;
@@ -619,7 +554,7 @@
         }
 
         .buy-action-btn {
-            background-color: #06C755;
+            background-color: #000;
             color: white;
             border: none;
             padding: 14px;
@@ -634,19 +569,6 @@
         .dev-container {
             padding: 24px 16px;
             text-align: center;
-        }
-
-        .dev-logo {
-            width: 70px;
-            height: 70px;
-            background-color: #06C755;
-            color: white;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 30px;
-            margin: 0 auto 16px auto;
         }
 
         .dev-card {
@@ -705,19 +627,7 @@
         }
 
         .nav-item.active {
-            color: #06C755;
-            font-weight: bold;
-        }
-
-        .nav-badge {
-            position: absolute;
-            top: -4px;
-            right: 28%;
-            background-color: #06C755;
-            color: white;
-            font-size: 9px;
-            padding: 1px 4px;
-            border-radius: 8px;
+            color: #000000;
             font-weight: bold;
         }
     </style>
@@ -731,7 +641,7 @@
             <div class="content-scroll">
                 <div class="home-top-bar">
                     <div class="profile-area">
-                        <div class="my-avatar"><i class="fa-brands fa-line"></i></div>
+                        <div class="my-avatar"><i class="fa-solid fa-user"></i></div>
                         <div class="my-name">るる</div>
                     </div>
                     <div class="home-top-icons">
@@ -748,10 +658,10 @@
                     </div>
                     <div class="friend-row">
                         <div class="friend-row-left">
-                            <div class="mini-icons"><i class="fa-solid fa-users"></i></div>
+                            <div class="mini-icons"><i class="fa-solid fa-user"></i></div>
                             <div class="friend-info">
                                 <h4>友だち</h4>
-                                <p>あ...</p>
+                                <p>るる...</p>
                             </div>
                         </div>
                         <span class="friend-count">2 &gt;</span>
@@ -783,19 +693,19 @@
 
             <div class="content-scroll">
                 <div class="chat-list">
-                    <!-- 「あ」とのトーク -->
+                    <!-- 「るる」とのピン留めトーク（内容なし） -->
                     <div class="chat-item" onclick="openChatRoom()">
                         <div class="avatar-container">
-                            <div class="avatar"><i class="fa-brands fa-line"></i></div>
+                            <div class="avatar"><i class="fa-solid fa-user"></i></div>
                             <div class="pin-badge"><i class="fa-solid fa-thumbtack"></i></div>
                         </div>
                         <div class="chat-info">
                             <div class="chat-header-row">
-                                <span class="chat-name">あ</span>
-                                <span class="chat-time">17:50</span>
+                                <span class="chat-name">るる</span>
+                                <span class="chat-time"></span>
                             </div>
                             <div class="chat-message-row">
-                                <span class="chat-last-message">おきた</span>
+                                <span class="chat-last-message"></span>
                             </div>
                         </div>
                     </div>
@@ -824,7 +734,7 @@
             <div class="chatroom-header">
                 <div class="chatroom-header-left">
                     <i class="fa-solid fa-chevron-left" style="cursor: pointer;" onclick="closeChatRoom()"></i>
-                    <span>あ</span>
+                    <span>るる</span>
                 </div>
                 <div class="chatroom-header-right">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -835,123 +745,7 @@
             </div>
 
             <div class="chatroom-content">
-                <div class="message-group">
-                    <div class="msg-avatar"><i class="fa-brands fa-line"></i></div>
-                    <div class="msg-body">
-                        <div class="bubble">は？</div>
-                        <div class="msg-meta">
-                            <span class="msg-time">15:08</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="message-group">
-                    <div class="msg-avatar"><i class="fa-brands fa-line"></i></div>
-                    <div class="msg-body">
-                        <div class="bubble">パクリやん</div>
-                        <div class="msg-meta">
-                            <span class="msg-time">15:08</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="message-group">
-                    <div class="msg-avatar"><i class="fa-brands fa-line"></i></div>
-                    <div class="msg-body">
-                        <div class="bubble">いやこれわざとぱくられたやんな？</div>
-                        <div class="msg-meta">
-                            <span class="msg-time">15:13</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="message-group">
-                    <div class="msg-avatar"><i class="fa-brands fa-line"></i></div>
-                    <div class="msg-body">
-                        <div class="bubble">え？</div>
-                        <div class="msg-meta">
-                            <span class="msg-time">15:13</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="message-group mine">
-                    <div class="msg-body">
-                        <div class="bubble">それはしらん</div>
-                        <div class="msg-meta">
-                            <span class="read-status">既読</span>
-                            <span class="msg-time">15:14</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="message-group">
-                    <div class="msg-avatar"><i class="fa-brands fa-line"></i></div>
-                    <div class="msg-body">
-                        <div class="bubble">えっ</div>
-                        <div class="msg-meta">
-                            <span class="msg-time">15:15</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="message-group">
-                    <div class="msg-avatar"><i class="fa-brands fa-line"></i></div>
-                    <div class="msg-body">
-                        <div class="bubble">まるおさん、やるやん</div>
-                        <div class="msg-meta">
-                            <span class="msg-time">15:15</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="message-group mine">
-                    <div class="msg-body">
-                        <div class="bubble">なにそれは</div>
-                        <div class="msg-meta">
-                            <span class="read-status">既読</span>
-                            <span class="msg-time">15:17</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="message-group mine">
-                    <div class="msg-body">
-                        <div class="bubble">ねる</div>
-                        <div class="msg-meta">
-                            <span class="read-status">既読</span>
-                            <span class="msg-time">15:28</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="message-group">
-                    <div class="msg-avatar"><i class="fa-brands fa-line"></i></div>
-                    <div class="msg-body">
-                        <div class="bubble">バイバイ</div>
-                        <div class="msg-meta">
-                            <span class="msg-time">15:28</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="message-group mine">
-                    <div class="msg-body">
-                        <div class="bubble">おき</div>
-                        <div class="msg-meta">
-                            <span class="msg-time">17:37</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="message-group mine">
-                    <div class="msg-body">
-                        <div class="bubble">おきた</div>
-                        <div class="msg-meta">
-                            <span class="msg-time">17:50</span>
-                        </div>
-                    </div>
-                </div>
+                <!-- トーク内容なし -->
             </div>
 
             <div class="chatroom-footer">
@@ -993,7 +787,6 @@
                 </div>
 
                 <div class="dev-container">
-                    <div class="dev-logo"><i class="fa-brands fa-line"></i></div>
                     <div class="dev-card">
                         <h4>アプリについて Beta0.0</h4>
                         <p>開発元：Lunaria<br>開発者：るる/るいん</p>
@@ -1010,7 +803,7 @@
                     <div class="modal-close" onclick="closeModuleModal()"><i class="fa-solid fa-xmark"></i></div>
                 </div>
                 <div class="modal-body">
-                    <p id="modalPrice" style="font-size: 20px; font-weight: bold; color: #06C755; margin-bottom: 12px;"></p>
+                    <p id="modalPrice" style="font-size: 20px; font-weight: bold; color: #000; margin-bottom: 12px;"></p>
                     <p id="modalDesc">詳細説明が入ります。</p>
                 </div>
                 <button class="buy-action-btn" onclick="alert('追加しました！'); closeModuleModal();">取得する</button>
@@ -1024,8 +817,7 @@
                 <span>ホーム</span>
             </a>
             <a class="nav-item active" onclick="switchScreen('talk', this)" id="nav-talk">
-                <div class="nav-badge">999+</div>
-                <i class="fa-brands fa-line"></i>
+                <i class="fa-solid fa-comment"></i>
                 <span>トーク</span>
             </a>
             <a class="nav-item" onclick="switchScreen('app', this)">
